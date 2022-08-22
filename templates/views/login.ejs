@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <%- include('header_link.ejs') %>
+<body>
+  <%- include('logo.ejs') %>
+<div class="container">
+
+  <form action="/post_login" method="POST" enctype="application/x-www-form-urlencoded">
+    <div class="row">
+      <div style="text-align:center; font-size:40px; opacity:1;">Log In</div>
+<br>
+<div style="font-size:15px ;opacity:0.5"> New to Chefaura? <span ><a style="color:rgb(51, 187, 255); text-decoration:none;" href="signup">Sign Up</a></span>
+</div>
+<br> <br>
+   <!--  
+ <div class=vl></div> 
+   -->
+        <div class="col">
+    
+        <input style="border-bottom:0.5px ridge rgb(96,96,96)" type="text" name="username" placeholder="Username" required >
+        <input style="border-bottom:0.5px ridge rgb(96,96,96)"  type="password" name="password" placeholder="Password" required>
+        <br> 
+           <div id="login" style="margin-left:55px;"> 
+<!--
+<input  type="checkbox" name="rem">
+<label  for="rem"> Remember me</label>
+-->
+  <span> <a class="forgot" href="forgetpassword">Forgot password</a></span></div>
+     <br> 
+      <br><br>
+        <input  id="logbutton"  type="submit" name="validate" value="Login">
+
+      </div>
+      
+    
+      
+</div>
+     
+  </form>
+</div>
+<br><br>
+<p style="font-size:11px; text-align:center; opacity:0.5;" >  * By logging in, you agree to our  <a style="color:rgb(51, 187, 255); text-decoration:none; opacity:1;" href="termsofuse">Terms of Use </a>and to receive<br> QTs emails & updates and acknowledge that you read our<br><a style="color:rgb(51, 187, 255);opacity:1; text-decoration:none;" href="privacypolicy"> Privacy Policy.</a>
+</p>
+<!--script>
+function goBack() {
+  window.history.back();
+}
+</script-->
+
+  <!-- <ul>
+    {{#each recipie}}
+      <li>{{this.username}} and {{this.photo}}</li>
+    {{/each}}
+  </ul> -->
+
+</body>
+</html>
+
+
+
