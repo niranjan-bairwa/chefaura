@@ -120,8 +120,7 @@ app.post("/post",upload.fields([{name:'img1'},{name:'img2'},{name:'img3'},{name:
   }
   console.log(arr)  
   
-  //res.send("heloooo")
- // const image=req.files.map(f=>({url:f.path,filename:f.filename}))
+  
   new db_post({
     title: req.body.title,
     desc: req.body.desc,
